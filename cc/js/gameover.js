@@ -23,7 +23,7 @@ var GameOver = cc.LayerColor.extend({
         }
  
         var label = cc.LabelTTF.create(message, "Arial", 32);
-        label.setColor(cc.c3b(0, 0, 0));
+        // label.setColor(cc.c3b(0, 0, 0));
         label.setPosition(winSize.width/2, winSize.height/2);
         this.addChild(label);
  
@@ -41,7 +41,8 @@ var GameOver = cc.LayerColor.extend({
 GameOver.create = function (won) {
     var sg = new GameOver();
     sg._won = won;
-    if (sg && sg.init(cc.c4b(255, 255, 255, 255))) {
+    // if (sg && sg.init(cc.c3b(255,255,255))) {
+    if(sg){
         return sg;
     }
     return null;
