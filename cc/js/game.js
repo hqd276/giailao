@@ -96,10 +96,12 @@ var GameLayer = cc.Layer.extend({
           if (cc.rectIntersectsRect(robinRect, monsterRect)) {
               // cc.log("collision!");
               // this._robin.removeFromParent();
+
               cc.arrayRemoveObject(this._monsters, monster);
               monster.removeFromParent();     
               this.gameOver();
               this._gameOver = true;
+
           }
       }
     }
@@ -115,6 +117,10 @@ var GameLayer = cc.Layer.extend({
     }
   },
   gameOver:function(){
+    //Chay sound khi dead
+    var audioEngine = cc.audioEngine;
+    audioEngine.playEffect(res.ROBIN_DEAD);
+
     this.unschedule (this.addMonster);
     this.unschedule (this.addCloud);
     this.unschedule (this.addMount);

@@ -10,6 +10,7 @@ res.MOUNTAIN_IMAGE = 'images/Mount-HD.png';
 res.TREE_IMAGE = 'images/Tree-HD.png';
 
 res.ROBIN_SOUND = 'sounds/RobinTap1.wav';
+res.ROBIN_DEAD = 'sounds/BigExplode.wav';
 
 var kZindexBG = 0;
 var kZindexFloor = 40;
