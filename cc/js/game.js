@@ -247,7 +247,7 @@ window.onload = function(){
         cc.view.resizeWithBrowserSize=true;
 
         //load resources
-        cc.LoaderScene.preload(["images/HelloWorld.png"], function () {
+        cc.LoaderScene.preload(["images/Tube-HD.png"], function () {
             
             cc.director.runScene(GameLayer.scene());
         }, this);
