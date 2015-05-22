@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luyện trí nhớ!</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+
+  <meta property="og:title" content="Luyện trí nhớ -.-!"/>
+  <meta property="og:description" content="Chưa nghĩ ra :)"/>
+  <meta property="og:url" content="http://giailao.com/memory.html" />
+  <meta property="og:image" content="http://giailao.com/images/pl.png" />
+
+  <script src="../js/jquery-2.1.3.min.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,22 +25,46 @@
   ga('send', 'pageview');
 
 </script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '896282510465005',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
 
-<script src="js/jquery-2.1.3.min.js"></script>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-
-<div id="picbox">
-  <span id="boxbuttons">
-    <span class="button">
-      <span id="counter">0</span>
-      Clicks
+  <div id="picbox">
+    <h1 class="text-center">
+        Luyện trí nhớ
+    </h1>
+    <div class="text-center">
+        <div class="fb-share-button" data-href="http://giailao.com/memory.html" data-layout="button_count">
+        </div>
+    </div>
+    <span id="boxbuttons">
+      <span class="button">
+        <span id="counter">0</span>
+        Lượt
+      </span>
+      <span class="button">
+        <a onclick="ResetGame();">Chơi lại</a>
+      </span> 
     </span>
-    <span class="button">
-      <a onclick="ResetGame();">Reset</a>
-    </span> 
-  </span>
-  <div id="boxcard"></div>
-</div>
+    <div id="boxcard"></div>
+  </div>
+
+</body>
+</html>
 
 <style type="text/css">
   * {
@@ -33,11 +74,12 @@
 body {
   font: 18px Verdana;
   color: #FFF;
-  background: #CCC;
+  background: url('images/stadium.jpg') no-repeat;  
+  background-size: 100% auto;
 }
 #picbox {
   margin: 0px auto;
-  width: 640px;
+  width: 660px;
 }
 #boxcard {
   z-index: 1;
@@ -49,14 +91,15 @@ body {
   height: 100px;
   margin: 5px;
   padding: 5px;
-  border: 4px solid #EE872A;
+  border: 1px solid #282828;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 1px 5px rgba(0,0,0,.5);
-  background: #B1B1B1;
+  background: rgba(255,255,255,.2);
   z-index: 2;
 }
 #boxcard div img {
+  height: 90px;
   display: none;
   border-radius: 10px;
   z-index: 3;
@@ -68,14 +111,17 @@ body {
 }
 #boxbuttons .button {
   text-transform: uppercase;
-  background: #EE872A;
+  background: #282828;
   padding: 5px 10px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 #boxbuttons .button:hover {
   background: #999;
+}
+#boxbuttons .button a{
+  color: #fff;
 }
 </style>
 
@@ -88,16 +134,20 @@ var ImgFound = 0;
 var Source = "#boxcard";
 
 var ImgSource = [
-  "http://img5.uploadhouse.com/fileuploads/17699/176992640c06707c66a5c0b08a2549c69745dc2c.png",
-  "http://img6.uploadhouse.com/fileuploads/17699/17699263b01721074bf094aa3bc695aa19c8d573.png",
-  "http://img6.uploadhouse.com/fileuploads/17699/17699262833250fa3063b708c41042005fda437d.png",
-  "http://img9.uploadhouse.com/fileuploads/17699/176992615db99bb0fd652a2e6041388b2839a634.png",
-  "http://img4.uploadhouse.com/fileuploads/17699/176992601ca0f28ba4a8f7b41f99ee026d7aaed8.png",
-  "http://img3.uploadhouse.com/fileuploads/17699/17699259cb2d70c6882adc285ab8d519658b5dd7.png",
-  "http://img2.uploadhouse.com/fileuploads/17699/1769925824ea93cbb77ba9e95c1a4cec7f89b80c.png",
-  "http://img7.uploadhouse.com/fileuploads/17699/1769925708af4fb3c954b1d856da1f4d4dcd548a.png",
-  "http://img9.uploadhouse.com/fileuploads/17699/176992568b759acd78f7cbe98b6e4a7baa90e717.png",
-  "http://img9.uploadhouse.com/fileuploads/17699/176992554c2ca340cc2ea8c0606ecd320824756e.png"
+  "images/arsenal.png",
+  "images/cardiff.png",
+  "images/chelsea.png",
+  "images/everton.png",
+  "images/fulham.png",
+  "images/liverpool.png",
+  "images/manchester_city.png",
+  "images/manchester_united.png",
+  "images/newcastle.png",
+  "images/stoke.png",
+  "images/swansea_city.png",
+  // "images/westham.png",
+  "images/sunderland.png",
+  // "images/middlesbrough.png",
 ];
 
 function RandomFunction(MaxValue, MinValue) {
