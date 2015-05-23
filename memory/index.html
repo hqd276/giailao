@@ -7,8 +7,8 @@
 
   <meta property="og:title" content="Luyện trí nhớ -.-!"/>
   <meta property="og:description" content="Chưa nghĩ ra :)"/>
-  <meta property="og:url" content="http://giailao.com/memory.html" />
-  <meta property="og:image" content="http://giailao.com/images/pl.png" />
+  <meta property="og:url" content="http://giailao.com/memory" />
+  <meta property="og:image" content="http://giailao.com/memory/images/back-side.png" />
 
   <script src="../js/jquery-2.1.3.min.js"></script>
   <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -42,26 +42,33 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-
-  <div id="picbox">
-    <h1 class="text-center">
-        Luyện trí nhớ
-    </h1>
-    <div class="text-center">
-        <div class="fb-share-button" data-href="http://giailao.com/memory.html" data-layout="button_count">
+  <div class="container">
+    <div class="col-md-7">
+      <div id="picbox">
+        <h1 class="text-center">
+            Luyện trí nhớ
+        </h1>
+        <div class="text-center">
+            <div class="fb-share-button" data-href="http://giailao.com/memory/" data-layout="button_count">
+            </div>
         </div>
+        <span id="boxbuttons">
+          <span class="button">
+            <span id="counter">0</span>
+            Lượt
+          </span>
+          <span class="button">
+            <a onclick="ResetGame();">Chơi lại</a>
+          </span> 
+        </span>
+        <div id="boxcard"></div>
+      </div>
     </div>
-    <span id="boxbuttons">
-      <span class="button">
-        <span id="counter">0</span>
-        Lượt
-      </span>
-      <span class="button">
-        <a onclick="ResetGame();">Chơi lại</a>
-      </span> 
-    </span>
-    <div id="boxcard"></div>
+    <div class="col-md-5" style="padding-top:150px;">
+      <div class="fb-comments" data-href="http://giailao.com/memory/" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+    </div>
   </div>
+  
 
 </body>
 </html>
@@ -74,12 +81,11 @@
 body {
   font: 18px Verdana;
   color: #FFF;
-  background: url('images/stadium.jpg') no-repeat;  
-  background-size: 100% auto;
+  background: url('images/stadium-bg.jpg') repeat;  
 }
 #picbox {
   margin: 0px auto;
-  width: 660px;
+  width: 540px;
 }
 #boxcard {
   z-index: 1;
@@ -87,19 +93,19 @@ body {
 }
 #boxcard div{
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 111px;
   margin: 5px;
-  padding: 5px;
+  padding: 0;
   border: 1px solid #282828;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 1px 5px rgba(0,0,0,.5);
   background: rgba(255,255,255,.2);
   z-index: 2;
 }
 #boxcard div img {
-  height: 90px;
+  width: 78px;
   display: none;
   border-radius: 10px;
   z-index: 3;
@@ -134,19 +140,31 @@ var ImgFound = 0;
 var Source = "#boxcard";
 
 var ImgSource = [
-  "images/arsenal.png",
-  "images/cardiff.png",
-  "images/chelsea.png",
-  "images/everton.png",
-  "images/fulham.png",
-  "images/liverpool.png",
-  "images/manchester_city.png",
-  "images/manchester_united.png",
-  "images/newcastle.png",
-  "images/stoke.png",
-  "images/swansea_city.png",
+  "images/0-wenger.png",
+  "images/1-szczesny.png",
+  "images/2-Debuchy.png",
+  "images/3-Gibbs.png",
+  "images/4-Merter.png",
+  "images/5-Vermaleen.png",
+  "images/6-Koscielny.png",
+  "images/7-Rosicky.png",
+  "images/8-Arterta.png",
+  "images/9-Podolski.png",
+  "images/10-Wilshere.png",
+  "images/11-Ozil.png",
+  // "images/arsenal.png",
+  // "images/cardiff.png",
+  // "images/chelsea.png",
+  // "images/everton.png",
+  // "images/fulham.png",
+  // "images/liverpool.png",
+  // "images/manchester_city.png",
+  // "images/manchester_united.png",
+  // "images/newcastle.png",
+  // "images/stoke.png",
+  // "images/swansea_city.png",
   // "images/westham.png",
-  "images/sunderland.png",
+  // "images/sunderland.png",
   // "images/middlesbrough.png",
 ];
 
@@ -194,7 +212,7 @@ function OpenCard() {
   if ($("#" + id + " img").is(":hidden")) {
     $(Source + " div").unbind("click", OpenCard);
   
-    $("#" + id + " img").slideDown('fast');
+    $("#" + id + " img").fadeIn('fast');
 
     if (ImgOpened == "") {
       BoxOpened = id;
@@ -206,8 +224,8 @@ function OpenCard() {
       CurrentOpened = $("#" + id + " img").attr("src");
       if (ImgOpened != CurrentOpened) {
         setTimeout(function() {
-          $("#" + id + " img").slideUp('fast');
-          $("#" + BoxOpened + " img").slideUp('fast');
+          $("#" + id + " img").fadeOut('fast');
+          $("#" + BoxOpened + " img").fadeOut('fast');
           BoxOpened = "";
           ImgOpened = "";
         }, 400);
@@ -226,7 +244,7 @@ function OpenCard() {
     $("#counter").html("" + Counter);
 
     if (ImgFound == ImgSource.length) {
-      $("#counter").prepend('<span id="success">You Found All Pictues With </span>');
+      $("#counter").prepend('<span id="success">Bạn đã mở hết trong </span>');
     }
   }
 }

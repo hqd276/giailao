@@ -8,6 +8,7 @@
 <script type="text/javascript" src="js/tagcloud.jquery.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="js/bootstrap.min.js"></script>
+<script src="js/hammer.min.js"></script>
 
 </head>
 <body>
@@ -833,7 +834,7 @@ hr {
 </style>
 
 <script type="text/javascript">
-/document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Wait till the browser is ready to render the game (avoids glitches)
   window.requestAnimationFrame(function () {
     var manager = new GameManager(4, KeyboardInputManager, HTMLActuator);
