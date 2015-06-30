@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="text-center">
 	<div id="tagcloud">
 		<ul>
 			<li><a href="/about">Hoàng Dũng</a></li>
@@ -42,11 +42,18 @@
 </style>
 
 <script type="text/javascript">
+	var w;
+	if ($( window ).width()>768) {
+		w = 500;
+	}else{
+		w =  $( window ).width() - 30;
+	}
+
 	var settings = {
 	//height of sphere container
-	height: 500,
+	height: w,
 	//width of sphere container
-	width: 500,
+	width: w,
 	//radius of sphere
 	radius: 100,
 	//rotation speed

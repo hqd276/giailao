@@ -12,3 +12,9 @@
 	left: 15px;
 	z-index: 100;
 }
+.navbar-toggle {
+	border: 1px solid #700;
+}
+.navbar-toggle .icon-bar{
+	background-color: #700;
+}

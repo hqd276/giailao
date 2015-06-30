@@ -1,6 +1,6 @@
 <script src="/assets/js/hammer.min.js"></script>
 
-<div class="container">
+<div class="">
   <!-- <h1 class="text-center">
       2048
   </h1> -->

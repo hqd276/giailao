@@ -1,4 +1,4 @@
-<div class="container">
+<div class="">
   <!-- <h1 class="text-center">
       Luyện trí nhớ
   </h1> -->
