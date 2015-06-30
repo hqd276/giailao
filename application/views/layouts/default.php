@@ -9,8 +9,8 @@
 <?php if (isset($item)){?>
 <meta property="og:title" content="<?php echo $item['title'] ?>"/>
 <meta property="og:description" content="<?php echo htmlspecialchars($item['description']) ?>"/>
-<meta property="og:url" content="<?php echo base_url().'chi-tiet/'.$item['slug']?>" />
-<meta property="og:image" content="<?php echo base_url().'uploads/news/'.$item['image']?>" />
+<meta property="og:url" content="<?php echo base_url().'game/'.$item['slug']?>" />
+<meta property="og:image" content="<?php echo base_url().'assets/images/'.$item['image']?>" />
 <?php }?>
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>

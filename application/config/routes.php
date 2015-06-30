@@ -43,44 +43,14 @@ $route['404_override'] = '';
 
 $route['home'] = "home";
 
+$route['game/2048'] = "game/g2048";
+
 $route['user'] = "user";
 $route['login'] = "user/login";
 $route['register'] = "user/register";
 $route['logout'] = "user/logout";
 
-$route['aboutus'] = "about";
-$route['contact'] = "contact";
-
-$route['ban-do-showroom'] = "map";
-
-$route['tra-gop'] = "about/index/10";
-$route['tuyen-dung'] = "about/index/11";
-
-$route['news'] = "news";
-$route['news/list/(:num)'] = "news/index/$1";
-$route['news/list/(:num)/(:num)'] = "news/index/$1/$2";
-
-$route['nissan'] = "product";
-$route['nissan/(:any)'] = "product/detail_t/$1";
-
-$route['chi-tiet/(:any)'] = "news/detail_t/$1";
-
-$route['danh-muc/(:any)'] = "news/index_t/$1";
-
 $route['admin'] = "admin";
-// $route['list-support'] = "admin/support";
-// $route['list-booking'] = "admin/booking";
-
-$route['list-category/(:num)'] = "admin/category/index/$1";
-$route['add-category/(:num)'] = "admin/category/add/$1";
-$route['edit-category/(:num)/(:num)'] = "admin/category/edit/$1/$2";
-
-$route['list-news/(:num)'] = "admin/news/index/$1";
-$route['add-news/(:num)'] = "admin/news/add/$1";
-$route['edit-news/(:num)/(:num)'] = "admin/news/edit/$1/$2";
-
-// $route['list-gallery'] = "admin/gallery/index";
-// $route['add-gallery'] = "admin/gallery/add";
 
 // $route['setting'] = "admin/setting";
 $route['edit-setting/(:num)'] = "admin/setting/edit/$1";

@@ -1,16 +1,16 @@
 <div class="container text-center">
 	<div id="tagcloud">
 		<ul>
-			<li><a href="#">Hoàng Dũng</a></li>
+			<li><a href="/about">Hoàng Dũng</a></li>
 			<li><a href="#">Vân Vẹo</a></li>
 			<li><a href="#">Ỉn</a></li>
-			<!-- <li><a href="caro.html">Cờ caro</a></li> -->
-			<li><a href="html/memory">Memory</a></li>
-			<li><a href="html/xephinh">Xếp hình</a></li>
+			<li><a href="/game/caro">Cờ caro</a></li>
+			<li><a href="/game/memory">Memory</a></li>
+			<li><a href="/game/xepso">Xếp số</a></li>
+			<li><a href="/game/2048">2048</a></li>
 			<!-- <li><a href="snake.html">Rắn săn mồi</a></li> -->
-			<li><a href="html/cc">Flappy Boy</a></li>
+			<li><a href="html/cc">Siêu nhơn</a></li>
 			<!-- <li><a href="chess.html">Cờ vua</a></li> -->
-			<!-- <li><a href="2048.html">2048</a></li> -->
 			<li><a href="https://www.facebook.com/">Facebook</a></li>
 			<li><a href="https://www.google.com/">Google</a></li>
 			<li><a href="https://www.twitter.com/">Twitter</a></li>
@@ -35,7 +35,9 @@
 		padding: 30px auto;
 	}
 	#tagcloud {
-		margin: 30px auto;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		box-shadow: 5px 5px 3px #888888;
 	}
 </style>
 
