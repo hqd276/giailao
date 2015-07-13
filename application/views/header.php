@@ -25,12 +25,20 @@
             <li><a href="/game/2048">2048</a></li>
           </ul>
         </li>
+        <li><a href="" onclick="addToPage();">Thêm vào Fan page</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <script type="text/javascript">
+function addToPage(){
+  FB.ui({
+    method: 'pagetab',
+    redirect_uri: 'https://giailao.com/'
+  }, function(response){});
+}
+
   $('.navbar-brand').hover(function(){
     $(this).children('img').addClass('zoom',1000,"easeOutBounce" );
   },function(){
