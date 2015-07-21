@@ -25,8 +25,15 @@
             <li><a href="/game/2048">2048</a></li>
           </ul>
         </li>
-        <li><a href="" onclick="addToPage();">Thêm vào Fan page</a></li>
-        <li><a href="" onclick="checkLoginState();">Đăng nhập bằng tài khoản Facebook</a></li>
+        <!-- <li><a href="#" onclick="addToPage();">Thêm vào Fan page</a></li> -->
+      </ul>
+      <ul class="pull-right nav navbar-nav">
+        <?php if ($is_login) {?>
+        <li><a href="#"> Chào <strong><?php echo $o_user['name'] ?></strong></a> </li>
+        <li><a href="/user/ologout">Thoát</a></li>
+        <?php } else {?>
+        <li><a href="#" onclick="checkLoginState();">Đăng nhập bằng tài khoản Facebook</a></li>
+        <?php }?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -93,17 +100,34 @@ function checkLoginState() {
 function checkOpenUser() {
   // console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
+    console.log(response);
 
-    console.log('Successful login for: ' + response.name);
+
+    $.ajax({
+      method: "POST",
+      url: "user/facebook",
+      data: {id:response.id, 
+            first_name:response.first_name,
+            last_name:response.last_name,
+            gender:response.gender,
+            link:response.link,
+            name:response.name,}
+    })
+    .done(function( msg ) {
+      console.log(msg);
+      if (msg.status)
+        window.location.href = '/';
+    });
+
+    // console.log('Successful login for: ' + response.name);
     // document.getElementById('status').innerHTML =
     //   'Thanks for logging in, ' + response.name + '!';
   });
 }
 
-  $('.navbar-brand').hover(function(){
-    $(this).children('img').addClass('zoom',1000,"easeOutBounce" );
-  },function(){
-    $(this).children('img').removeClass('zoom');
-  });
+$('.navbar-brand').hover(function(){
+  $(this).children('img').addClass('zoom',1000,"easeOutBounce" );
+},function(){
+  $(this).children('img').removeClass('zoom');
+});
 </script>

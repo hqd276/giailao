@@ -43,6 +43,19 @@ class Header extends MX_Controller{
 		}
 		$data['setting'] = $setting;
 
+		$is_login = false;
+		$oid = $this->session->userdata('oid');
+		if ($oid) {
+			$this->load->model(array('user/model'));
+			$o_user = $this->model->getOpenUserById($oid);
+			if ($o_user){
+				$is_login = true;
+				$data['o_user'] = $o_user;
+			}
+			// var_dump($o_user);die;
+		}
+		$data['is_login'] = $is_login;
+
 		return $data;
 
 		// $this->template->load_view('header',$data);

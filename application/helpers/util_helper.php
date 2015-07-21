@@ -167,4 +167,15 @@ if ( ! function_exists('_name_cleaner'))
         return preg_replace("/[^a-zA-Z0-9\-\_\/\.,]/", $replace_string, $name);
     }
 }
+if ( ! function_exists('requestToMobile'))
+{
+    function requestToMobile($status,$message,$value = array()){
+        $data = array('status'=>$status,
+                      'message'=>$message,
+                      'value'=>$value);
+        
+        header('Content-type: application/json');
+        print (json_encode($data));die;
+    }
+}
 ?>

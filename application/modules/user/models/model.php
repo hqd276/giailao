@@ -24,4 +24,19 @@ class Model extends CI_Model{
 		} 
 	} 
 
+	function isOpenUser($oid){
+		$query	= $this->db->query('SELECT * FROM openid WHERE oid = '.$oid);
+					
+		return $query->row_array();
+	}
+
+	function getOpenUserById($id){
+		$query	= $this->db->query('SELECT * FROM openid WHERE id = '.$id);
+					
+		return $query->row_array();
+	}
+	function insertOpenUser($data){
+		return $this->db->insert('openid', $data); 
+	}
+
 }

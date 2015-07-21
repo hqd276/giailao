@@ -62,6 +62,7 @@
   return t;
 }(document, "script", "twitter-wjs"));</script>
 
+<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
     FB.init({

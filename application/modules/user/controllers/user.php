@@ -53,4 +53,40 @@ class User extends MX_Controller {
 		redirect(base_url('login')); 
 	}
 	
+	public function ologout(){ 
+		$this->session->unset_userdata('oid');	
+		// Unset session of user 
+		redirect(base_url()); 
+	}
+
+	public function facebook(){
+		$fid = $this->input->post('id'); 
+
+		$oUser = $this->model->isOpenUser($fid);
+		if (!$oUser) {
+			$first_name = $this->input->post('first_name'); 
+			$last_name = $this->input->post('last_name'); 
+			$gender = $this->input->post('gender'); 
+			$link = $this->input->post('link'); 
+			$name = $this->input->post('name'); 
+
+			$data = array('oid'=>$fid,
+							'first_name'=>$first_name,
+							'last_name'=>$last_name,
+							'gender'=>$gender,
+							'link'=>$link,
+							'name'=>$name);
+
+			$id = $this->model->insertOpenUser($data);
+		}else{
+			$id = $oUser['id'];
+		}
+		if ($id>0){
+			$this->session->set_userdata('oid', $id);
+			$this->load->helper(array('util')); 
+			requestToMobile(true,'Dang nhap thanh cong!');
+		}else{
+			requestToMobile(false,'Dang nhap that bai!');
+		}
+	}
 }
