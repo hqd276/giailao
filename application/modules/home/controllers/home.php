@@ -15,10 +15,10 @@ class Home extends MX_Controller{
 
 		$data = array();
 
-		$this->load->helper('facebook');
+		// $this->load->helper('facebook');
 
-		echo '<pre>';
-		print_r(parse_signed_request($_POST['signed_request']));
+		// echo '<pre>';
+		// print_r(parse_signed_request($_POST['signed_request']));
 		
 		// $this->load->model('admin/modelnews');
 		// $this->load->model('admin/modelbanner');
