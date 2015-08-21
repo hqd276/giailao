@@ -1,0 +1,859 @@
+/*
+*List Friend CSS
+*/
+.header{
+	
+	background-color: #3a5795;
+	background-image: url(../img/head-bg.png);
+	background-repeat: repeat-x;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 42px;
+	border-bottom: 1px solid #133783;
+	-webkit-box-shadow:0 2px 2px -2px rgba(0, 0, 0, .52);
+}
+
+.login{
+	width: 400px;
+	margin-top:42px;
+}
+
+.chatList{
+	position: fixed;
+	right: 0px;
+	top: 50px;
+	width: 205px;
+	background-color: #E9EAED;
+}
+
+.cl_wrap{
+	height: 900px;
+	box-shadow: 1px 0px 0px #F0F0F2 inset;
+	border-left: 1px solid rgba(0, 0, 0, 0.4);
+	border-left-color: #CCC;
+}
+
+.cl_header{
+	background-color: #3a5795;
+	background-image: url(../img/head-bg.png);
+	background-repeat: repeat-x;
+	height: 42px;
+	border-bottom: 1px solid #133783;
+	-webkit-box-shadow:0 2px 2px -2px rgba(0, 0, 0, .52);
+}
+
+.notification{
+
+	height: 142px;
+}
+.list{
+	position: relative;
+	max-height: 415px;
+	overflow-x:hidden;
+	overflow-y: scroll;
+	box-shadow: 1px 0px 0px #F0F0F2 inset;
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+	border-top-color: #CCC;
+	margin-right: -5px;
+	padding-top: 5px;	
+}
+/*.list::-webkit-scrollbar{
+	width: 8px;
+}*/
+
+.friend{
+	cursor:pointer;
+	height:32px;
+	position:relative;
+	padding:2px 0px 2px 8px;
+}
+.friend:hover{
+	background:#f8f8f8;
+}
+
+.cl_tool{
+	position: fixed;
+	bottom: 0px;
+	box-shadow: 1px 0px 0px #F0F0F2 inset;
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+	border-top-color: #CCC;
+	background-color: #fff;
+	height: 26px;
+	width: 100%;
+}
+
+.cl_tool_inner{
+	height: 100%;
+	position: relative;
+}
+
+.cl_tool_inner > img{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+.search_input{
+	border-style: none; 
+    border-color: Transparent;  
+	width: 204px;
+	padding: 6px 25px 4px 28px;
+	margin-top: 0px; 
+	margin-bottom: 0px;
+	top: 0px;
+	height: 14px;
+	width: 96px;
+	resize:none;
+	font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	color: #373e4d;
+    font-size: 12px;
+    line-height: 1.28;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    outline: none;
+    overflow: auto; 
+}
+.tool_icon{
+	position: absolute;
+	bottom: 0px;
+	left: 150px;
+	height: 26px;
+	width: 49px;
+}
+
+.tool_icon_inner{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.tool_setting{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 26px;
+	width: 24px;
+	background-image: url(../img/tool_setting.png);
+	background-repeat: no-repeat;
+}
+
+.tool_setting:hover{
+	background-image: url(../img/tool_setting_hover.png);
+}
+
+.tool_new_message{
+	position: absolute;
+	left: 24px;
+	height: 26px;
+	width: 23px;
+	background-image: url(../img/tool_new_message.png);
+	background-repeat: no-repeat;
+}
+
+.tool_new_message:hover{
+	background-image: url(../img/tool_new_message_hover.png);
+}
+
+.avatar{
+	float:left;
+	padding:0px;
+}
+
+.name{
+	height: 32px;
+	width: 95px;
+	font-size: 12px;
+	float:left;
+}
+
+.name_inner{
+	margin-top: 8px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	height:15px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.status{
+	position: absolute;
+	right: 5px;
+	height: 32px;
+}
+
+.status_inner{
+	position: relative;
+	width: 30px;
+	margin-top: 8px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+
+.status_inner > img{
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+.text{
+	color:#63a924;
+	font-weight: 500;
+	font-size:9px;
+	line-height: 12px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+/*
+*End List Friend CSS
+*/
+
+
+/*
+*Message CSS
+*/
+	/*Box Chat CSS*/
+	.box_wrap{
+		position: fixed;
+		bottom: 0px;
+		right: 205px;
+	}
+
+	.box_inner{
+		float: right;
+		display: inline;
+		max-width: 850px;
+		max-height: 300px;
+		overflow: hidden;
+	}	
+
+	.msg_box{
+		position: relative;
+		float: right;
+		margin-right: 10px;
+		height: 285px;
+		background:white;
+		border-right: 1px solid rgba(0, 0, 0, 0.4);
+		border-right-color: #CCC;
+		border-left: 1px solid rgba(0, 0, 0, 0.4);
+		border-left-color: #CCC;
+		border-radius:5px 5px 0px 0px;
+	}
+
+	.msg_header{
+		cursor: pointer;
+		height: 26px;
+		width: 260px;
+		background-color: #627aad;
+		border-radius:3px 3px 0px 0px;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+		border-color: #2f477a #29447e #1a356e;
+	}
+	.msg_header:hover{
+		background-color: rgb(74,102,167);
+	}
+
+	.username{
+
+		height: 26px;
+		width: 160px;
+		float: left;
+	}
+
+	.username_inner{
+		margin: 4px 0px 5px 3px;
+		font-size: 12px;
+		line-height: 18px;
+		overflow: hidden;
+	}
+
+	.user_name{
+		max-height: 18px;
+		max-width: 135px;
+		overflow: hidden;
+		float: left;
+		color: #fff;
+		font-weight:bold;
+		text-shadow:0 -1px rgba(0, 0, 0, 0.25);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.user_status{
+		float: left;
+		margin: 6px 5px 2px 5px;
+		background-image: url(../img/online.png);
+		background-repeat: no-repeat;
+		height: 8px;
+		width: 8px;
+	}
+
+	.box_chat_icon{
+		float: right;
+		height: 26px;
+		width: 100px;
+	}
+
+	.box_chat_icon_inner{
+		
+	}
+	.close{
+		float: right;
+		margin: 9px 8px 7px 5px;
+		background-image: url(../img/close.png);
+		background-repeat: no-repeat;
+		height: 10px;
+		width: 10px;
+	}
+	.close:hover{
+		background-image: url(../img/close_hover.png);
+	}
+
+	.setting{
+		float: right;
+		background-image: url(../img/setting.png);
+		background-repeat: no-repeat;
+		height: 13px;
+		width: 12px;
+		margin: 6px 5px 6px 5px;
+	}
+	.setting:hover{
+		background-image: url(../img/setting_hover.png);
+	}
+	.video_call{
+		float: right;
+		margin: 8px 5px 8px 5px;
+		background-image: url(../img/video_call.png);
+		background-repeat: no-repeat;
+		height: 9px;
+		width: 14px;
+	}
+	.video_call:hover{
+		background-image: url(../img/video_call_hover.png);
+	}
+	.add_friend{
+		float: right;
+		margin: 7px 5px 8px 5px;
+		background-image: url(../img/add_friend.png);
+		background-repeat: no-repeat;
+		height: 12px;
+		width: 14px;
+	}
+	.add_friend:hover{
+		background-image: url(../img/add_friend_hover.png);
+	}
+	.add_friend_box{
+		position: relative;
+		height: 29px;
+		border-color: rgba(29, 49, 91, 0.3);
+		border-style: solid;
+		border-width: 0 1px;
+		background-color: #f6f7f8;
+		width: 260px;
+	}
+
+	.add_friend_box_inner{
+		float: left;
+		position: absolute;
+		top: 2px;
+		left: 5px;
+		overflow: hidden;
+	}
+
+	.add_input{
+		float: left;
+		text-align: left;
+		width: 180px;
+		color: #9197a3;
+		width: 190px; 
+		height: 15px; 
+		padding: 4px 2px;
+		font-size: 12px;
+		font-family: Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+	}
+
+	.add_button{
+		float: left;
+		margin-top: 1px;
+		margin-left: 4px;
+		padding-top: 4px;
+		height: 17px;
+		width: 48px;
+		background-color: #5b74a8;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+		border-color: #2f477a #29447e #1a356e;
+		text-align: center;
+		line-height: 13px;
+		font-size: 12px;
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+	}
+
+	.msg_box_down{
+		float: right;
+		position: relative;
+		height: 285px;
+		width: 160px;
+		margin-right: 10px;
+	}
+	.msg_box_down_inner{
+		cursor: pointer;
+		position: absolute;
+		bottom: 0;
+		height: 26px;
+		width: 100%;
+		background-color: #f1f2f4;
+		border-radius: 3px 3px 0 0;
+		border-color: rgba(29, 49, 91, 0.3);
+		border-style: solid;
+		border-width: 1px 1px 0;
+	}
+	.msg_box_down_inner:hover{
+		background-color: #f9f9fa;
+	}
+
+	.box_down_name{
+		margin: 6px 8px 5px 8px;
+		height: 15px;
+		font-family: Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+		font-size: 12px;
+		font-weight:bold;
+		color: #141823;
+		text-shadow:0 1px rgba(255, 255, 255, 0.25);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		line-height: 15px;
+	}
+	.box_down_close{
+		position: absolute;
+		top: 8px;
+		right: 6px;
+		height: 10px;
+		width: 10px;
+		background-image: url(../img/box_down_close.png);
+	}
+	.box_down_close:hover{
+		background-image: url(../img/box_down_close_hover.png);
+	}
+
+	.overflow_tab{
+		cursor: pointer;
+		position: absolute;
+		bottom: 0;
+		left: -50px;
+		height: 27px;
+		width: 36px;
+		background: none repeat scroll 0 0 rgb(255,255,255);
+		border-radius: 3px 3px 0 0;
+	    border-color: rgba(29, 49, 91, 0.3);
+	    border-style: solid;
+	    border-width: 1px 1px 0;
+	}
+	.overflow_tab_inner{
+		position: relative;
+	}
+
+	.overflow_icon{
+		margin-top: 6px;
+		margin-left: 1px;
+		margin-right: 0;
+		width: 25px;
+		height: 15px;
+		background-image: url(../img/overflow_icon.png);
+		background-repeat: no-repeat;
+	}
+
+	.number_of_tabs{
+		position: absolute;
+		top:0px;
+		right: 5px;
+		color: #333;
+		font-family: Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+		font-weight: bold;
+		line-height: 16px;
+		font-size: 12px;
+	}
+
+	.overflow_list{
+		cursor: pointer;
+		position: absolute;
+		bottom: 26px;
+		left: -129px;
+		background: none repeat scroll 0 0 rgb(255,255,255);
+		border-radius: 1px 1px 0px 1px;
+	    border-color: rgba(29, 49, 91, 0.3);
+	    border-style: solid;
+	    border-width: 1px 1px 1px 1px;
+	}
+	.overflow_list_inner{
+		margin: 2px 0;
+	}
+	.user_overflow{
+		margin-top: 1px;
+		width: 100%;
+		height: 21px;
+		color: #111;
+	}
+	.user_overflow:hover{
+		background: #6d84b4;
+		color: white;
+		border-top: 1px solid #3a5795;
+		border-bottom: 1px solid #3a5795;
+	}
+	.user_overflow_inner{
+		position: relative;
+		display: flex;
+	}
+	._name{
+		float: left;
+		margin-right:  18px;
+		padding: 3px 0px 3px 25px;
+		height: 15px;
+		font-size: 12px;
+		font-family: Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+		white-space: nowrap;
+		width: 100%;
+	}
+	._close{
+		position: absolute;
+		right: 3px;
+		top: 5px;
+		height: 11px;
+		width: 11px;
+		background-image: url(../img/_close.png);
+	}
+	._close:hover{
+		background-image: url(../img/_close_hover.png);
+	}
+
+	.strike_cover{
+		position: absolute;
+		bottom: 26px;
+		left: -49px;
+		height: 2px;
+		width: 36px;
+		background: none repeat scroll 0 0 rgb(255,255,255);
+	}
+	/*End Box Chat CSS*/
+
+	/*Message Inner CSS*/
+	.msg_wrap{
+		/*position: absolute;*/
+		height: 100%;
+		width: 260px;
+		background: #e9eaed;
+		border-color: rgba(29, 49, 91, 0.3);
+		border-style: solid;
+		border-width: 0 1px;
+
+	}
+	.msg_body{
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 228px;
+	}
+
+	.msg_me{
+		margin: 3px 0 3px 0;
+		width: 245px;
+		float: right;
+	}
+	.msg_me_inner{
+		float: right;
+		margin: 5px 10px;
+		max-width: 185px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.29);
+		background-image: -webkit-linear-gradient(bottom, #c7defe, #e7f1fe);
+		background-image: -moz-linear-gradient(center bottom , #c7defe, #e7f1fe);
+		border-radius: 4px;
+		box-shadow: 0px 1px 0px #DCE0E6;
+	}	
+	.msg_me_text, .msg_friend_text{
+		position: relative;
+		padding: 4px 5px 3px 6px;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		color: #373e4d;
+		text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+		line-height: 1.28;
+		font-size:12px;
+	}
+
+	.msg_me_text:after{
+		content:"";
+		position:absolute;
+		width:8px;
+		height:13px;
+		background-color: #E7F0FD;
+		background-image: url(../img/msg_me_after.png);
+		right:-8px;
+		top:4px;
+	}
+
+	.msg_friend{
+		width: 240px;
+		margin: 3px 0 3px 0;
+		float: left;
+	}
+
+	.msg_friend_text{
+		float: left;
+		margin: 5px 10px 5px 5px;
+		max-width: 170px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.29);
+		background-image: -webkit-linear-gradient(bottom, #f2f2f2, #fff);
+		background-image: -moz-linear-gradient(center bottom , #f2f2f2, #fff);
+		border-radius: 4px;
+		box-shadow: 0px 1px 0px #DCE0E6;
+	}
+	.msg_friend_avatar{
+		float: left;
+		margin: 1px 5px;
+		width: 32px;
+		height: 32px;
+	}
+
+	.msg_friend_avatar > img{
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.29);
+		border-radius: 4px;
+		box-shadow: 0px 1px 0px #DCE0E6;
+	}
+
+	.msg_friend_text:before{
+		content:"";
+		position:absolute;
+		width:0px;
+		height:0px;
+		background-image: url(../img/msg_friend_after.png);
+		background-color: rgb(250, 250, 250);
+		left:-8px;
+		top:4px;
+		height: 13px;
+		width: 8px;
+	}
+
+	.msg_footer{
+		height: 27px;
+		max-height: 63px;
+		width: 260px;
+		background: white;
+		position: absolute;
+		bottom: 0px;
+		box-shadow: 1px 0px 0px #F0F0F2 inset;
+		border-top: 1px solid rgba(0, 0, 0, 0.4);
+		border-top-color: #CCC;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;
+	}
+
+	.msg_footer_inner{
+		max-height: 77px;
+		min-height: 16px;
+		height: 100%;
+		position: relative;
+	}
+	.msg_input{
+		border-style: none; 
+	    border-color: Transparent;  
+		width: 204px;
+		padding: 7px 2px 4px 5px;
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		top: 0px;
+		height: 16px;
+		width: 200px;
+		resize:none;
+		font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+		color: #373e4d;
+	    font-size: 12px;
+	    line-height: 1.28;
+	    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	    white-space: pre-wrap;
+	    word-wrap: break-word;
+	    outline: none;
+	    overflow: auto; 
+	}
+
+	.msg_footer_icon{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		height: 27px;
+		width: 49px;
+	}
+
+	.footer_icon_inner{
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	.emoticons{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 27px;
+		width: 24px;
+		background-image: url(../img/emoticons.png);
+		background-repeat: no-repeat;
+	}
+
+	.emoticons:hover{
+		background-image: url(../img/emoticons_hover.png);
+	}
+
+	.img_add{
+		position: absolute;
+		right: 24px;
+		height: 26px;
+		width: 23px;
+		background-image: url(../img/img_add.png);
+		background-repeat: no-repeat;
+	}
+
+	.img_add:hover{
+		background-image: url(../img/img_add_hover.png);
+	}
+	/*End Message Inner CSS*/
+/*End Message CSS*/
+
+/*Scrollbar CSS*/
+.custom_scrollbar{
+	cursor: pointer;
+	position: absolute;
+	right: -1px;
+	bottom: 0px;
+	height: 100%;
+	width: 14px;
+}
+
+.scrollbar_inner{
+	margin-top: 12px;
+	margin-bottom: 12px;
+	height: 100%;
+	max-height: 370px;
+	position: relative;
+}
+
+.scroll_dragger_container{
+	width: 100%;
+	height: 320px;
+	min-height: 50px;
+	max-height: 370px;
+	position: absolute;
+	top: 0px;
+}
+
+.scroll_dragger{
+	margin: 0 auto;
+	width: 8px;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	border-radius: 16px;
+	background-color:#e9eaed;
+}
+
+.scroll_dragger:hover{
+	background-color: rgb(116, 119, 126);
+	transition: opacity 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s;
+}
+
+.scroll_road{
+	margin: 0 auto;
+	width: 8px;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	border-radius: 16px;
+	background-color:#e9eaed;
+}
+
+.scroll_road:hover{
+	background-color: rgb(199, 200, 204);
+	transition: opacity 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s;
+}
+
+.videoCall{
+	padding-top: 1px;
+	text-align: center;
+	/*position: relative*/
+}
+.buttons{
+	position: absolute;
+	cursor: pointer;
+	background-color: #808080;
+	top: 37%;
+	color: white;
+	padding: 3px 0px;
+	width: 114px;
+	left: 67px;
+	border-radius: 2px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #BDBDBD;
+}
+.remoteVideo, .localVideo{
+	height: 90px;
+	width: 120px;
+	background: black;
+	position: absolute;
+	left: 25%;
+}
+.remoteVideo{top:120px}
+.localVideo{top:29px}
+.fa-video-camera{}
+.fa-microphone, .fa-expand, .fa-compress{padding-right: 15px;}
+.fa-stop{padding-left: 15px;}
+.fa:hover{
+	color: #E4E4E4;
+}
+.off{
+	color: #2D2D32;
+}
+
+.expand{
+	background-color: black;
+	height: 360px;
+	width: 480px;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 2;
+}
+
+.expandButton{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 3;
+	font-size:30px;
+	height:30px;
+	width:200px;
+}
+.hide{
+	display: none;
+	visibility: hidden;
+}
+/*End Scrollbar CSS*/

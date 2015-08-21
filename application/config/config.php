@@ -16,8 +16,9 @@
 */
 // echo '<pre>';
 // var_dump($_SERVER);die;
-$config['base_url']	= $_SERVER['HTTP_X_FORWARDED_PROTO']."://{$_SERVER['HTTP_HOST']}/";
+// $config['base_url']	= $_SERVER['HTTP_X_FORWARDED_PROTO']."://{$_SERVER['HTTP_HOST']}/";
 // $config['base_url']	= 'http://zenithvietnamtours.com/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------

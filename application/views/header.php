@@ -131,3 +131,57 @@ $('.navbar-brand').hover(function(){
   $(this).children('img').removeClass('zoom');
 });
 </script>
+
+<?php if ($is_login) {?>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('chat.sv/public/css/hint.css');?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('chat.sv/public/css/style.css');?>">
+<!--Chat list-->
+<div class="chatList">
+    <!-- <div class="cl_header"></div> -->
+    <div class="cl_wrap">
+      <!-- <div class="notification"></div>  -->
+      <div class="list">
+        <div class="list_inner">
+        <!--Friend list showed here-->
+          <div class="list_push"></div>
+        </div>
+      </div>
+      <!-- <div class="cl_tool">
+        <div class="cl_tool_inner">
+          <img src="<?php echo base_url('chat.sv/public/img/tool_search.png')?>">
+          <input class="search_input" placeholder="Tìm kiếm"/>
+          <div class="tool_icon">
+            <div class="tool_icon_inner">
+              <a class="tool_new_message" title="Tin nhắn mới"></a>
+              <a class="tool_setting" title="Tùy chỉnh"></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  
+  </div>
+
+<!--End Chat list-->
+
+<!--Chat box-->
+<div class="box_wrap">
+  <div class="box_inner">
+  <!--Message showed here-->
+
+    <div class="box_end"></div>
+    <div class="overflow_tab" style="display:none">
+      <div class="overflow_tab_inner">
+        <div class="overflow_icon"></div>
+        <div class="number_of_tabs"></div>
+      </div>
+    </div>
+    <div class="overflow_list" style="display:none;">
+      <div class="overflow_list_inner">
+        <div class="_list_push"></div>
+      </div>
+    </div>
+    <div class="strike_cover" style="display:none;"></div>
+  </div>
+</div>
+<?php }?>

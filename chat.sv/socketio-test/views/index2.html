@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CHAT</title>
+		 <link href="/css/style2.css" rel="stylesheet">
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>ENTER YOUR NAME HERE</h1>
+			<input type="text" id="username" style="width:200px; height:20px"></input>
+			<!--<button id="setName" onClick="setName()">SET NAME</button>-->
+			<a href="#" title="login" onClick="setName()">Login</a>
+			<!--Chat list-->
+			<div class="chatList">
+				<div class="cl_header"> Chat list</div>
+				<div class="cl_wrap"> 
+					<div class="list">
+						<!--
+						<div class="friend">
+							<div class="avatar">
+								<img src="../img/avatar.png" alt=""></img>
+							</div>
+							<div class="name">username</div>
+							<div class="status">
+								<div class="text">web</div>
+								<img src="../img/online.png" alt=""></img>
+							</div>
+						</div>
+						-->
+						<!--Friend list showed here-->
+						
+						<div class="list_push"></div>
+					</div>
+					<div class="cl_tool">tool</div>
+				</div>
+			  </div>
+			<!--End Chat list-->
+			
+			<!--Chat box-->
+				<!--
+				<div class="msg_box" style="right:260px; display:none">
+					<div class="msg_head">
+						<div class="username">username</div>
+						<div class="close"><img src="/img/close.png" alt="" width="12px" height="12px"></img></div>
+					</div>
+					<div class="msg_wrap">
+						<div class="msg_body">
+							
+							<div class="msg_push"></div>
+						</div>
+						<div class="msg_footer"><textarea class="msg_input" rows="2"></textarea></div>
+					</div>
+				</div>
+				-->
+				
+				<!--Message showed here-->
+				
+				<div class="box_end"></div>
+			<!--End Chat box-->
+			<!--
+			<input id="pseudoInput" type="text"></input>
+			<button id="pseudoSet">Set Pseudo</button>
+			-->
+			<!--TEST-->
+			<div id="chatEntries"></div>
+			<div id="chatControls">
+				<textarea id="messageInput" style="resize:none"></textarea>
+				<button id="submit" >SEND</button>
+			</div>
+			<!--end TEST-->
+		</div>
+	</body>
+</html>
