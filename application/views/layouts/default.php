@@ -41,6 +41,8 @@
   ga('send', 'pageview');
 
 </script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- 230311 --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4589501348379821" data-ad-slot="3058382199" data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
   
 <script src="https://apis.google.com/js/platform.js" async defer>
   {lang: 'vi'}

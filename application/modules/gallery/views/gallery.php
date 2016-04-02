@@ -8,17 +8,17 @@
 </style>
 
 <div class=" bg-white">
-	<h2 class="text-uppercase">Gallery</h2>
+	<h2 class="text-uppercase">Tây du</h2>
 	<hr>
-	<a href="<?php echo base_url()?>" class="">Home</a> / <a href="<?php echo base_url().'gallery'?>">Gallery</a>
+	<a href="<?php echo base_url()?>" class="">Home</a> / <a href="<?php echo base_url().'taydu'?>">Tây du</a>
 	<hr>
 
-	<div class="row col-md-12">
+	<div class="row col-md-12 wrapper-parent">
 		<?php foreach ($list_items as $key => $value) {?>
 			<div class="col-xs-6 col-md-3">
 			    <div class="thumbnail">
-			    	<a href="<?php echo base_url("uploads/gallery/".$value['image']); ?>" data-toggle="lightbox" data-gallery="multiimages" data-title="<?php echo $value['title'] ?>">
-                        <img src="<?php echo base_url("uploads/gallery/".$value['image']); ?>" class="img-responsive">
+			    	<a href="<?php echo base_url("uploads/gallery/".$value['image']); ?>" data-toggle="lightbox" data-gallery="multiimages" data-title="<?php echo $value['title'] ?>" data-parent=".wrapper-parent">
+                        <img src="<?php echo base_url("uploads/gallery/thumbs/".$value['image']); ?>" class="img-responsive">
                     </a>
 			      	<!-- <div class="caption text-center">
 				        <h4><?php echo $value['title'] ?></h4>

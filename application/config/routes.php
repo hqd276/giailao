@@ -45,6 +45,9 @@ $route['home'] = "home";
 
 $route['game/2048'] = "game/g2048";
 
+$route['taydu'] = "gallery";
+$route['taydu/(:any)'] = "gallery/$1";
+
 $route['user'] = "user";
 $route['login'] = "user/login";
 $route['register'] = "user/register";

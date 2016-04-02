@@ -151,16 +151,24 @@ class Gallery extends MX_Controller{
 		redirect(base_url('/admin/gallery'));
 	}
 
-	function category_box ($category, $dataC) {
-		$category_box = "";
-		foreach ($category as $k => $v) {
-			$category_box.= "<option value='".$v['id']."' ";
-			$category_box.= ($dataC['category_id'] == $v['id'])?'selected':'';
-			$root = ($v['parent']==1)?'Đã thực hiện':'Đang thực hiện';
-			$category_box.= "> [" . $root . "] ".$v['name']."</option>";
+	function category_box ($category, $dataC, $parent = -1, $level = 0) {
+		$category_box = '';
+		foreach ($category as $key => $value) {
+			if ($value["parent"] == $parent) {
+				$str_temp = '';
+				if($level){
+					for ($i = 1; $i<= $level; $i++) {
+						$str_temp .= '--';
+					}
+				}
 
+				$category_box.= "<option value='".$value['id']."' ";
+				$category_box.= ($dataC['category_id'] == $value['id'])?'selected':'';
+				$category_box.= "> ".$str_temp.' '.$value['name']."</option>";
+
+				$category_box.= $this->category_box($category, $dataC, $value["id"], $level+1);
+			}
 		}
-		// $category[$key]["child"]= $child;
 		return $category_box;
 	}
 }

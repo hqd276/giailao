@@ -22,6 +22,13 @@
   ga('send', 'pageview');
 
 </script>
+
+<input value="123" name="button" type="checkbox"></input>
+<script type="text/javascript">
+	$('[name=button]').click(function(){
+		alert($(this).is(':checked'));
+	});
+</script>
 <div class="container text-center">
 	<div id="tagcloud">
 		<ul>
