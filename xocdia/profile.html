@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script   src="js/jquery-2.2.3.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>	
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo-slogan">
+				<a href="/"><img src="img/logo.png"></a>
+				<h3>Sòng bài trực tuyến – Casino Online Uy tín Việt Nam</h3>
+			</div>
+			<nav class="navbar navbar-default">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav text-uppercase">
+			        <li class="active"><a href="#">Trang chủ</a></li>
+			        <li><a href="#">Xóc đĩa online</a></li>
+			        <li><a href="#">Gửi/ rút tiền</a></li>
+			        <li><a href="#">Hướng dẫn</a></li>
+			        <li class=" pull-right user-info dropdown">
+			        	<a href="" class="dropdown-toggle" data-toggle="dropdown"><strong>Chào Admin</strong> <i class="fa fa-cog" aria-hidden="true"></i></a>
+			        	<ul class="dropdown-menu">
+				            <li><a href="#"  data-toggle="modal" data-target="#settingModal" >Thông tin cá nhân</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Thoát</a></li>
+			          	</ul>
+			        </li>
+			      </ul>
+			     
+			    </div><!-- /.navbar-collapse -->
+			</nav>
+
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="profile form-block">
+						
+						<div class="form-horizontal col-sm-12">
+							<div class="form-group">
+								<label class="">Tài khoản:</label>
+								<p class="">Admin</p>
+							</div>
+							<div class="form-group">
+								<label class="">Số Xu hiện có:</label>
+								<p class="">$42965 Xu</p>
+							</div>
+							<div class="form-group">
+								<label class="">Địa chỉ Tiền Internet (Bitcoin):</label>
+								<p class="" style="overflow: hidden">1KRrag798jT9xfsBRJCTvu6DQ3thmiRU36</p>
+							</div>
+							<div class="form-group">
+								<label class="">Tiền Internet hiện có:</label>
+								<p class="">6000 Tiền = 0.0006 BTC</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="form-block">
+						<div >Góc-Cờ-Bạc không thu bất kì khoản phí nào khi nạp, rút hay chuyển tiền.</div>
+			            <div >Phí giao dịch 1000 Tiền/lượt không phân biệt số lượng tiền. Do đơn vị chuyển tiền thu.</div>
+
+			            <div class="form-block money-change">
+			                <strong>1 BTC = 10tr Tiền Internet ~ 9.5tr vnđ</strong> <br>
+			                <strong>1 Tiền = 1 Xu ~ 0.95 vnđ</strong> <br>
+			            </div>
+
+			            <strong >Các trang web mua bán Tiền Internet uy tín:</strong> <br>
+
+			            <a href="https://tieninternet.com/">1. TienInternet.com</a> <br> Mua bán Tiền Internet thanh toán qua ngân hàng, thẻ điện thoại hoặc tiền mặt. <br><br>
+			            <a href="https://facebook.com/">2. facebook.com</a> <br>Cộng đồng người sử dụng tiền ảo trên Facebook, dễ dàng tìm được người mua và bán với giá tốt. <br><br>
+			            <a href="https://santienao.com/">3. SanTienAo.com</a> <br>mua bán Tiền Internet thanh toán qua ngân hàng. <br><br>
+			            <a href="https://btc-e.com/">4. btc-e.com</a> <br>mua bán Tiền Internet với đô la mỹ. <br>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="form-block content-block">
+						<!-- Nav tabs -->
+					  	<ul class="nav nav-tabs text-center" role="tablist">
+						    <li role="presentation" class="active col-xs-4"><a href="#cointoxu" aria-controls="cointoxu" role="tab" data-toggle="tab">Nạp Xu</a></li>
+						    <li role="presentation" class="col-xs-4"><a href="#xutocoin" aria-controls="xutocoin" role="tab" data-toggle="tab">Rút Xu</a></li>
+						    <li role="presentation" class=" col-xs-4"><a href="#transfer" aria-controls="transfer" role="tab" data-toggle="tab">Chuyển Xu</a></li>
+					  	</ul>
+
+					  	<!-- Tab panes -->
+					  	<div class="tab-content">
+						    
+						    <div role="tabpanel" class="tab-pane active" id="cointoxu">
+						    	<form class=" form-horizontal" action="" method="get" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate="">
+				                    <strong>Nạp Xu bằng Tiền Internet để chơi Cờ Bạc<br></strong>
+				                    <input type="hidden" name="ten_dang_nhap" value="amin7">
+				                    Nhập số Tiền mà bạn muốn nạp:<br>
+
+				                    <div class="form-group">
+					                    <div class="col-sm-4">
+						                    <select name="so_tien" id="chon_so_xu_nap" class="form-control">
+						                        <option value="5000" selecte="selected">Nạp hết số tiền hiện có</option>
+						                        <option value="50000">50 Nghìn</option>
+						                        <option value="200000">200 Nghìn</option>
+						                        <option value="500000">500 Nghìn</option>          
+						                        <option value="1000000">1 Triệu</option>
+						                        <option value="5000000">5 Triệu</option>
+						                        <option value="10000000">10 Triệu</option>
+						                        <option value="50000000">50 Triệu</option>
+						                    </select>
+					                    </div>
+					                    <label class="col-sm-4">= 5,000 Xu</label>
+					                </div>
+					                <div class="form-group">
+					                    <div class="col-sm-4">
+					                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Nạp Tiền">
+					                    </div>
+				                    </div>
+				                    <p style="color: #C3232D;">Phí giao dịch 1000 Tiền/lượt không phân biệt số lượng tiền.</p>
+				                </form>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="xutocoin">
+						    	<form class=" form-horizontal" action="" method="get" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate="">
+				                    <strong>Rút Xu cờ bạc thành tiền Internet<br></strong>
+				                    <input type="hidden" name="ten_dang_nhap" value="amin7">
+
+				                    Nhập số xu muốn rút thành Tiền Internet:<br>
+				                    <div class="form-group">
+					                    <div class="col-sm-4">
+						                    <select name="so_tien" id="chon_so_xu_nap" class="form-control">
+						                        <option value="5000" selecte="selected">Nạp hết số tiền hiện có</option>
+						                        <option value="50000">50 Nghìn</option>
+						                        <option value="200000">200 Nghìn</option>
+						                        <option value="500000">500 Nghìn</option>          
+						                        <option value="1000000">1 Triệu</option>
+						                        <option value="5000000">5 Triệu</option>
+						                        <option value="10000000">10 Triệu</option>
+						                        <option value="50000000">50 Triệu</option>
+						                    </select>
+					                    </div>
+					                    <label class="col-sm-4">50,000 Tiền Internet</label>
+					                </div>
+					                <div class="form-group">
+					                    <div class="col-sm-4">
+					                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Rút Tiền">
+					                    </div>
+				                    </div>
+				                    <span style="color: #C3232D;">Phí giao dịch 1000 Tiền/lượt không phân biệt số lượng tiền.</span>
+				                </form>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="transfer">
+						    	<form class=" form-horizontal" action="" method="get" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate="">
+				                    <strong>Chuyển Tiền Internet cho người khác<br></strong>
+				                    <input type="hidden" name="ten_dang_nhap" value="amin7">
+
+				                    Nhập số Tiền Internet mà bạn muốn chuyển:<br>
+				                    <div class="form-group">
+					                    <div class="col-sm-4">
+						                    <select name="so_tien" id="chon_so_xu_nap" class="form-control">
+						                        <option value="5000" selecte="selected">Nạp hết số tiền hiện có</option>
+						                        <option value="50000">50 Nghìn</option>
+						                        <option value="200000">200 Nghìn</option>
+						                        <option value="500000">500 Nghìn</option>          
+						                        <option value="1000000">1 Triệu</option>
+						                        <option value="5000000">5 Triệu</option>
+						                        <option value="10000000">10 Triệu</option>
+						                        <option value="50000000">50 Triệu</option>
+						                    </select>
+					                    </div>
+					                    <label class="col-sm-4">0.005 BTC</label>
+					                </div>
+					                <div class="form-group col-sm-12">
+					                	<label>Địa chỉ nhận Tiền Internet:</label>
+					                	<div>
+					                		<input class="form-control" type="text" name="dia_chi_nhan" value="" maxlength="64">
+					                	</div>
+					                </div>
+					                <div class="form-group col-sm-12">
+					                	<label>Nội dung chuyển tiền(có thể bỏ trống):</label>
+					                	<div>
+					                		<textarea class="form-control"></textarea>
+					                	</div>
+					                </div>
+				                    <div class="form-group">
+					                    <div class="col-sm-4">
+					                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Chuyển Tiền">
+					                    </div>
+				                    </div>
+				                    <p style="color: #C3232D;">Phí giao dịch 1000 Tiền/lượt không phân biệt số lượng tiền.</p>
+				                </form>
+						    </div>
+					  	</div>
+					</div>
+					
+
+					<div class="form-block content-block">
+						<!-- Nav tabs -->
+					  	<ul class="nav nav-tabs text-center" role="tablist">
+					  		<li role="presentation" class="active col-xs-4"><a href="#payment" aria-controls="payment" role="tab" data-toggle="tab">Nạp thẻ</a></li>
+						    <li role="presentation" class=" col-xs-4"><a href="#bonus" aria-controls="bonus" role="tab" data-toggle="tab">Đổi thưởng</a></li>
+					  	</ul>
+
+					  	<!-- Tab panes -->
+					  	<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="payment">
+						    	<form class=" form-horizontal" action="" method="get" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate="">
+				                    <fieldset>
+				                    	<legend>1. Chọn loại thẻ</legend>
+				                    	
+				                    	<div class="cc-selector">
+					                    	<ul class="list-unstyled">
+					                    		<li><input checked="checked" id="gate" type="radio" name="selector" value="gate" />
+										        <label class="drinkcard-cc gate" for="gate"></label></li>
+					                    		<li><input  id="mb" type="radio" name="selector" value="mb" />
+										        <label class="drinkcard-cc mb"for="mb"></label></li>
+					                    		<li><input  id="vn" type="radio" name="selector" value="vn" />
+										        <label class="drinkcard-cc vn"for="vn"></label></li>
+					                    		<li><input  id="vnmobile" type="radio" name="selector" value="vnmobile" />
+										        <label class="drinkcard-cc vnmobile" for="vnmobile"></label></li>
+					                    		<li><input  id="vt" type="radio" name="selector" value="vt" />
+										        <label class="drinkcard-cc vt"for="vt"></label></li>
+									        </ul>
+									    </div>
+									    
+				                    </fieldset>
+				                    <fieldset>
+				                    	<legend>2. Thông tin thẻ</legend>
+					                    <div class="form-group">
+						                    <label class="col-sm-3">Mã thẻ</label>
+							    			<div class="col-sm-9">
+							    				<input class="form-control"></input>
+							    			</div>
+						                </div>
+						                <div class="form-group">
+						                    <label class="col-sm-3">Số Serial</label>
+							    			<div class="col-sm-9">
+							    				<input class="form-control"></input>
+							    			</div>
+						                </div>
+						                <div class="form-group">
+						                    <div class="col-sm-4">
+						                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Nạp Thẻ">
+						                    </div>
+					                    </div>
+					                    <p style="color: #C3232D;">Nạp thẻ 100k có ngay 90k Xu</p>
+				                    </fieldset>
+				                </form>
+						    </div>
+						   	<div role="tabpanel" class="tab-pane" id="bonus">
+						   		<form class=" form-horizontal">
+						   			<div class="cc-selector">
+				                    	<ul class="list-unstyled">
+				                    		<li class="col-sm-6">
+				                    		<input checked=""  id="vt2" type="radio" name="selector" value="vt2" />
+									        <label class="drinkcard-cc vt2" for="vt2"></label>
+
+									        <span>Mệnh giá 20000</span>
+									        </li>
+									        <li class="col-sm-6">
+				                    		<input id="vt3" type="radio" name="selector" value="vt3" />
+									        <label class="drinkcard-cc vt3" for="vt3"></label>
+
+									        <span>Mệnh giá 50000</span>
+									        </li>
+									        <li class="col-sm-6">
+				                    		<input id="vt4" type="radio" name="selector" value="vt4" />
+									        <label class="drinkcard-cc vt4" for="vt4"></label>
+
+									        <span>Mệnh giá 100000</span>
+									        </li>
+									        <li class="col-sm-6">
+				                    		<input id="vt5" type="radio" name="selector" value="vt5" />
+									        <label class="drinkcard-cc vt5" for="vt5"></label>
+
+									        <span>Mệnh giá 200000</span>
+									        </li>
+
+				                    		<li class="col-sm-6"><input  id="mb2" type="radio" name="selector" value="mb2" />
+									        <label class="drinkcard-cc mb2" for="mb2"></label>
+
+									        <span>Mệnh giá 20000</span>
+									        </li>
+									        <li class="col-sm-6"><input  id="mb3" type="radio" name="selector" value="mb3" />
+									        <label class="drinkcard-cc mb3" for="mb3"></label>
+
+									        <span>Mệnh giá 50000</span>
+									        </li>
+									        <li class="col-sm-6"><input  id="mb4" type="radio" name="selector" value="mb4" />
+									        <label class="drinkcard-cc mb4" for="mb4"></label>
+
+									        <span>Mệnh giá 100000</span>
+									        </li>
+									        <li class="col-sm-6"><input  id="mb5" type="radio" name="selector" value="mb5" />
+									        <label class="drinkcard-cc mb5" for="mb5"></label>
+
+									        <span>Mệnh giá 200000</span>
+									        </li>
+
+				                    		<li class="col-sm-6"><input  id="vn2" type="radio" name="selector" value="vn2" />
+									        <label class="drinkcard-cc vn2" for="vn2"></label>
+
+									        <span>Mệnh giá 20000</span>
+									        </li>
+				                    		<li class="col-sm-6"><input  id="vn3" type="radio" name="selector" value="vn3" />
+									        <label class="drinkcard-cc vn3" for="vn3"></label>
+
+									        <span>Mệnh giá 50000</span>
+									        </li>
+									        <li class="col-sm-6"><input  id="vn4" type="radio" name="selector" value="vn4" />
+									        <label class="drinkcard-cc vn4" for="vn4"></label>
+
+									        <span>Mệnh giá 100000</span>
+									        </li>
+									        <li class="col-sm-6"><input  id="vn5" type="radio" name="selector" value="vn5" />
+									        <label class="drinkcard-cc vn5" for="vn5"></label>
+
+									        <span>Mệnh giá 200000</span>
+									        </li>
+
+								        </ul>
+								    </div>
+								    <div class="form-group">
+					                    <div class="col-sm-4">
+					                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Đổi thưởng">
+					                    </div>
+				                    </div>
+						   			<!-- <fieldset>
+				                    	<legend>1. Chọn loại thẻ</legend>
+								   		<div class="cc-selector">
+					                    	<ul class="list-unstyled">
+					                    		<li><input checked=""  id="vt2" type="radio" name="selector" value="vt2" />
+										        <label class="drinkcard-cc vt2" for="vt2"></label></li>
+					                    		<li><input  id="mb2" type="radio" name="selector" value="mb2" />
+										        <label class="drinkcard-cc mb2" for="mb2"></label></li>
+					                    		<li><input  id="vn2" type="radio" name="selector" value="vn2" />
+										        <label class="drinkcard-cc vn2" for="vn2"></label></li>
+					                    		
+									        </ul>
+									    </div>
+								    </fieldset>
+								    <fieldset>
+				                    	<legend>2. Chọn mệnh giá thẻ</legend>
+									    <div class="form-group">
+									    	<div class="col-sm-4">
+									    		<label>Chọn mệnh giá</label>
+									    	</div>
+									    	<div class="col-sm-4">
+										    	<select class="form-control">
+										    		<option>50.000 VND</option>
+										    		<option>100.000 VND</option>
+										    		<option>200.000 VND</option>
+										    		<option>500.000 VND</option>
+										    	</select>
+									    	</div>
+									    </div>
+								    
+									    <div class="form-group">
+						                    <div class="col-sm-4">
+						                    	<input  data-toggle="modal" data-target="#myModal" class="btn btn-primary" type="button" value="Nạp Thẻ">
+						                    </div>
+					                    </div>
+					                    <p style="color: #C3232D;">Tỉ lệ: 1 Xu = 1 VND</p>
+				                    </fieldset> -->
+							    </form>
+					            <div class="clearfix"></div>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+       	</div>
+	</main>
+	<footer>
+		<div id="footer-wrap">
+            <div class="container" id="footer-box">
+            	<ul class="list-unstyled">
+            		<li class="col-sm-3 col-xs-6">
+            			<h4>KHUYEN MAI XÓC ĐĨA PRO</h4>
+                        <a target="_new" title="" href="#"><img alt="" src="img/qc1.gif" scale="0"></a>
+            		</li>
+            		<li class="col-sm-3 col-xs-6">
+            			<h4>KHUYEN MAI XÓC ĐĨA PRO</h4>
+                        <a target="_new" title="" href="#"><img alt="" src="img/qc1.gif" scale="0"></a>
+            		</li>
+            		<li class="col-sm-3 col-xs-6">
+            			<h4>KHUYEN MAI XÓC ĐĨA PRO</h4>
+                        <a target="_new" title="" href="#"><img alt="" src="img/qc1.gif" scale="0"></a>
+            		</li>
+            		<li class="col-sm-3 col-xs-6">
+            			<h4>KHUYEN MAI XÓC ĐĨA PRO</h4>
+                        <a target="_new" title="" href="#"><img alt="" src="img/qc1.gif" scale="0"></a>
+            		</li>
+            	</ul>
+            </div>
+        </div>
+        <!--footer-wrap-->
+        <div id="copyright">
+	        <div class="container">
+                <a href="https://xocdiapro.com/">© Copyright Xóc đĩa pro</a> | <a target="_blank" href="https://xocdiapro.com/sitemap_index.xml">Sitemap</a> 
+	        </div>
+	    </div>
+	</footer>
+	<!-- Modal -->
+	<div class="modal fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form class="row form-horizontal">
+	        	<div class="col-sm-3">
+	        		<div class="avatar-profile text-center ">
+						<img src="img/profile.jpg">
+						<i class="fa fa-pencil-square-o btn-change-avatar" aria-hidden="true"></i>
+					</div>
+					<input type="file" name="change-avatar" class="hidden"></input>
+	        	</div>
+	        	<div class="col-sm-9">
+	        		<div class="form-group">
+		    			<label class="col-sm-3">Tên tài khoản</label>
+		    			<div class="col-sm-9">
+		    				<input class="form-control"></input>
+		    			</div>
+		    		</div>
+		    		<div class="form-group">
+		    			<label class="col-sm-3">Họ và tên</label>
+		    			<div class="col-sm-9">
+		    				<input class="form-control"></input>
+		    			</div>
+		    		</div>
+		    		<div class="form-group">
+		    			<label class="col-sm-3">Số điện thoại</label>
+		    			<div class="col-sm-9">
+		    				<input class="form-control"></input>
+		    			</div>
+		    		</div>
+		    		<div class="form-group">
+		    			<label class="col-sm-3">Email</label>
+		    			<div class="col-sm-9">
+		    				<input class="form-control"></input>
+		    			</div>
+		    		</div>
+	        	</div>
+	        	<div class="clearfix"></div>
+	    	</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+	        <button type="button" class="btn btn-primary">Lưu lại</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
+	      </div>
+	      <div class="modal-body">
+	        Giao dịch thành công
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript">
+		$('.avatar-profile').click(function(){
+			$('[name=change-avatar]').trigger('click');
+		});
+	</script>
+</body>
+</html>

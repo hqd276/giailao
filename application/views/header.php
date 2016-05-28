@@ -103,6 +103,7 @@ function checkOpenUser() {
   FB.api('/me', function(response) {
     console.log(response);
 
+
     $.ajax({
       method: "POST",
       url: "user/facebook",
