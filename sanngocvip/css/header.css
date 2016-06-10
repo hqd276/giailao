@@ -1,0 +1,299 @@
+header nav {
+	background-image: url('../images/bg-menu.png');
+	background-size: cover;
+	position: relative;
+	min-height: 100px;
+}
+header nav ul {
+	margin-right: 30px !important;
+}
+header nav ul li {
+	margin-right: 10px;
+	margin-top: 20px;
+}
+header nav input[type=text]{ 
+	border-radius: 9px;
+	background: rgba(0,0,0,.1);
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    border:none;
+}
+header nav input[type=text]::-webkit-input-placeholder {
+	color: #fafafa;
+}
+header nav input[type=text]::-moz-placeholder {
+	color: #fafafa;
+}
+header nav input[type=text]:-ms-input-placeholder {
+	color: #fafafa;
+}
+header nav input[type=text]:-moz-placeholder {
+	color: #fafafa;
+}
+header nav .btn {
+	display: block;
+	height: 47px;
+	width: 137px;
+	background:transparent;
+	border:none;
+	margin-top: -3px;
+}
+header nav .btn.btn-dangnhap {
+	background-image: url('../images/btn-dangnhap.png');
+}
+header nav .btn.btn-dangky {
+	background-image: url('../images/btn-dangky.png');
+}
+main { 
+	margin-bottom: 20px;
+}
+.panel {
+	border-radius: 5px 5px 0 0;
+    background-repeat: repeat-x;
+    border:none;
+}
+.panel .panel-heading{
+	background-image: url('../images/title-bottom.png');
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    line-height: 53px;
+    height: 53px;
+    padding: 0;
+    border:none;
+}
+#bangthuong .panel {
+	background-image: url('../images/bg-title-bangthuong.png');
+}
+#bangthuong .panel .panel-body{
+	background: #537cd8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#537cd8, #375dca); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#537cd8, #375dca); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#537cd8, #375dca); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#537cd8, #375dca); /* Standard syntax */
+    border-radius: 0 0 5px 5px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#bangthuong .panel .panel-body ul li {
+	line-height: 50px;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-image: url('../images/split-bangthuong.png');
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+}
+#bangthuong .panel .panel-body ul li:last-child {
+	background-image:none;
+}
+#bangthuong .panel .panel-body img {
+	float: right;
+	height: 50px;
+}
+
+#sanngoc {
+	background-image: url('../images/bg-sanngoc.png');
+	min-height: 300px;
+	background-size:  100% auto;
+	background-repeat: no-repeat;
+}
+
+#thongke .panel {
+	background-image: url('../images/bg-title-thongke.png');
+}
+#thongke .panel .panel-body{
+	background: #28889b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#28889b, #13687c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#28889b, #13687c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#28889b, #13687c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#28889b, #13687c); /* Standard syntax */
+    border-radius: 0 0 5px 5px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#thongke ul li {
+	width: 33.33%;
+	background-image: url('../images/split-huongdan.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+#thongke ul li:last-child {
+	background-image:none;
+}
+#thongke .nav>li>a {
+	padding: 0;
+	line-height: 53px;
+	border:none;
+}
+#thongke .nav>li>a:hover, #thongke .nav>li.active>a {
+	background-color: transparent;
+	background-image: url('../images/bg-title-thongke-active.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#thongke .nav-tabs>li.active>a,#thongke .nav-tabs>li.active>a:focus,#thongke .nav-tabs>li.active>a:hover {
+	background-color: transparent;
+}
+#baucua .panel {
+	background-image: url('../images/bg-title-baucua.png');
+}
+#baucua .panel .panel-body{
+	background: #569c30; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#569c30, #377d19); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#569c30, #377d19); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#569c30, #377d19); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#569c30, #377d19); /* Standard syntax */
+    border-radius: 0 0 5px 5px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+} 
+#baucua .item-baucua {
+	padding: 20px 25px;
+}
+#baucua .item-baucua .info{
+	line-height: 28px;
+	margin-left: 65px;
+}
+#baucua .item-baucua .info.coin-info{
+	color: #faff00;
+}
+#baucua .item-baucua .input-group{
+	margin-top:10px;
+}
+#baucua .item-baucua .input-group .btn-plus{
+	background-color: #ffff00;
+	border-radius: 0 18px 18px 0;
+	border-bottom: 3px solid #b8b800;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+}
+#baucua .item-baucua input[type=text]{ 
+	border-radius: 18px;
+	background: rgba(0,0,0,.1);
+    line-height: 36px;
+    height: 36px;
+    padding-right: 4px;
+    color: #fff;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    border:none;
+}
+#baucua input[type=text]::-webkit-input-placeholder {
+	color: #fafafa;
+}
+#baucua input[type=text]::-moz-placeholder {
+	color: #fafafa;
+}
+#baucua input[type=text]:-ms-input-placeholder {
+	color: #fafafa;
+}
+#baucua input[type=text]:-moz-placeholder {
+	color: #fafafa;
+}
+#xocxoc .panel {
+	background-image: url('../images/bg-title-xocxoc.png');
+}
+#xocxoc .panel .panel-body{
+	background: #a254e3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#a254e3, #8737d8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a254e3, #8737d8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a254e3, #8737d8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a254e3, #8737d8); /* Standard syntax */
+    border-radius: 0 0 5px 5px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#taixiu .panel {
+	background-image: url('../images/bg-title-taixiu.png');
+}
+#taixiu .panel .panel-body{
+	background: #a74c14; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#a74c14, #882d09); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a74c14, #882d09); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a74c14, #882d09); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a74c14, #882d09); /* Standard syntax */
+    border-radius: 0 0 5px 5px;
+    color: #fafafa;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#thongbao {
+	
+}
+#thongbao ul {
+	border-radius: 5px;
+	background-image: url('../images/bg-thongbao.png');
+	background-repeat: repeat-x;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+#thongbao ul li {
+	line-height: 85px;
+	color: #fff;
+	font-size: 16px;
+}
+#thongbao .btn {
+	display: block;
+	height: 47px;
+	background:transparent;
+	border:none;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-repeat: no-repeat;
+}
+#thongbao .btn.btn-xoa {
+	background-image: url('../images/btn-xoa.png');
+	width: 77px;
+}
+#thongbao .btn.btn-hoantat {
+	background-image: url('../images/btn-hoantat.png');
+	width: 137px;
+}
+
+
+#huongdan ul {
+	border-radius: 5px;
+	background-image: url('../images/bg-huongdan.png');
+	background-repeat: repeat-x;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	text-align: center;
+}
+#huongdan ul li {
+	width: 33.33%;
+	background-image: url('../images/split-huongdan.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#huongdan ul li:last-child {
+	background-image:none;
+}
+#huongdan ul li a {
+	line-height: 85px;
+	color: #fff;
+	font-size: 16px;
+	padding: 0;
+}
+#huongdan ul li a:hover {
+	background-color: transparent;
+	background-image: url('../images/hover-huongdan.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#huongdan ul li img {
+	height: 60px;
+}

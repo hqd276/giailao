@@ -25,7 +25,7 @@
             <li><a href="/game/2048">2048</a></li>
           </ul>
         </li>
-        <li><a href="/taydu"><strong>Tây Du</strong></a></li>
+        <!-- <li><a href="/taydu"><strong>Tây Du</strong></a></li> -->
         <!-- <li><a href="#" onclick="addToPage();">Thêm vào Fan page</a></li> -->
       </ul>
       <ul class="pull-right nav navbar-nav">
@@ -102,6 +102,7 @@ function checkOpenUser() {
   // console.log('Welcome!  Fetching your information.... ');
   FB.api('/me', function(response) {
     console.log(response);
+
 
     $.ajax({
       method: "POST",
