@@ -159,23 +159,22 @@ class Category extends MX_Controller{
 		redirect(base_url('/admin/category/index/'.$type));
 	}
 
-	function category_box ($category, $dataC) {
-		$category_box = "";
+	function category_box ($category, $dataC, $parent = -1, $level = 0) {
+		$category_box = '';
 		foreach ($category as $key => $value) {
-			if ($value["parent"] == -1) {
-				$category_box.= "<option value='".$value['id']."' ";
-				$category_box.= ($dataC['parent'] == $value['id'])?'selected':'';
-				$category_box.= ">".$value['name']."</option>";
-				// $child = array();
-				foreach ($category as $k => $v) {
-					if ($v["parent"] == $value["id"]){
-						$category_box.= "<option value='".$v['id']."' ";
-						$category_box.= ($dataC['parent'] == $v['id'])?'selected':'';
-						$category_box.= "> -- ".$v['name']."</option>";
-						// $child[] = $v;
+			if ($value["parent"] == $parent) {
+				$str_temp = '';
+				if($level){
+					for ($i = 1; $i<= $level; $i++) {
+						$str_temp .= '--';
 					}
 				}
-				// $category[$key]["child"]= $child;
+
+				$category_box.= "<option value='".$value['id']."' ";
+				$category_box.= ($dataC['parent'] == $value['id'])?'selected':'';
+				$category_box.= "> ".$str_temp.' '.$value['name']."</option>";
+
+				$category_box.= $this->category_box($category, $dataC, $value["id"], $level+1);
 			}
 		}
 		return $category_box;
