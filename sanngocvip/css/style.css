@@ -455,3 +455,32 @@ ul,ol {
 #registerModal input:-moz-placeholder {
 	color: #000;
 }
+
+#paymentModal .modal-body {
+	padding:0;
+}
+#paymentModal .modal-body .col-sm-6 {
+	padding: 15px;
+}
+#paymentModal .guide {
+	background-color: #efeded;
+	color: #646464;
+}
+#paymentModal .guide thead{
+	color: #5c58c5
+}
+#paymentModal img {
+	max-width: 100%;
+}
+#paymentModal .btn.btn-doithe {
+	background-image: url('../images/btn-doithe.png');
+	display: block;
+	height: 50px;
+	width: 150px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:none;
+	margin: auto;	
+	margin-bottom: 10px;
+}
