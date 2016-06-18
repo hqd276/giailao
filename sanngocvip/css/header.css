@@ -11,7 +11,7 @@ header nav ul li {
 	margin-right: 10px;
 	margin-top: 20px;
 }
-header nav input[type=text]{ 
+header nav .login input[type=text]{ 
 	border-radius: 9px;
 	background: rgba(0,0,0,.1);
     line-height: 35px;
@@ -35,7 +35,65 @@ input[type=text]:-ms-input-placeholder {
 input[type=text]:-moz-placeholder {
 	color: #fafafa;
 }
-header nav .btn {
+header nav .is-login li{
+	margin-top: 12px;
+}
+header nav .is-login .avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border:2px #fff solid;
+}
+header nav .is-login input[type=text]{ 
+	border-radius:	18px !important;
+	background: rgba(0,0,0,.1);
+    line-height: 36px;
+    height: 36px;
+    color: #fff;
+    -moz-box-shadow:    inset 0 0 8px #000000;
+    -webkit-box-shadow: inset 0 0 8px #000000;
+    box-shadow:         inset 0 0 8px #000000;
+    border:none;
+}
+header nav .is-login .btn {
+	background-color: transparent;
+	height: 47px;
+	background-repeat: no-repeat;
+	margin-top: 6px;
+}
+header nav .is-login .input-group .btn-plus{
+	background-color: #ffff00;
+    border-radius: 0 18px 18px 0;
+    border-bottom: 3px solid #b8b800;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    margin-top: 0;
+    height: 36PX;
+}
+header nav .is-login .username{
+	color: #fff;
+	margin-bottom: 5px;
+    display: block;
+}
+
+.btn.btn-doithe2 {
+	background-image: url('../images/btn-doithe2.png');
+	width: 107px;
+}
+.btn.btn-lichsuchoi {
+	background-image: url('../images/btn-lichsuchoi.png');
+	width: 156px;
+}
+.btn.btn-mail {
+	background-image: url('../images/btn-mail.png');
+	width: 44px;
+}
+.btn.btn-dangxuat {
+	background-image: url('../images/btn-dangxuat.png');
+	width: 40px;
+}
+header nav .login .btn {
 	display: block;
 	height: 47px;
 	width: 137px;
